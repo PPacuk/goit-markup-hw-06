@@ -406,13 +406,32 @@
       <div class="modal-animate">
       <div class="modal">
         <span class="modal__head">Zostaw swoje dane w formularzu poniżej</span>
+        <form>
+          
+          <label class="modal-name"><span class="surname">Imie</span>
+            <svg class="name-icon-modal">
+              <use class="name-link" href="./image/icons.svg#icon-modal-person"></use>
+            </svg>
+          <input type="text" name="name" class="modal-input">
+          </label>
+          <label class="modal-name"><span class="phonenr">Telefon</span>
+            <svg class="phone-icon-modal">
+              <use class="name-link" href="./image/icons.svg#icon-modal-phone"></use>
+            </svg>
+          <input type="tel" name="phone" class="modal-input">
+          </label>
+        </form>
+        <form class="modal-form" action="#" method="post">
+          <input class="modal-form-policy visually-hidden" id="user-policy" type="checkbox" name="policy">
+          <label for="user-policy" class="modal-form-policy-text">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label>
+        </form>
         <svg class="close-btn" data-modal-close>
           <use href="./image/icons.svg#icon-close"></use>
         </svg>
       </div>
       </div>
-    
     </div> 
     <script src="./js/modal.js"></script>   
   </body>
 </html>
+ 
