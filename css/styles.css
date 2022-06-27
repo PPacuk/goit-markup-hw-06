@@ -142,7 +142,6 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 94px;
-  z-index: 500;
 }
 .portfolio-item {
   width: 370px;
@@ -151,7 +150,7 @@ img {
   position: static;
 }
 .descriptionbox {
-  z-index: 1000;
+
   box-sizing: border-box;
   width: 370px;
   height: 70px;
@@ -668,8 +667,6 @@ img {
   display: block;
   margin: 40px 40px 12px 40px;
 }
-.modal-form-policy {
-}
 .modal-form-policy-text::before {
   display: inline-block;
   content: '';
@@ -686,8 +683,9 @@ img {
 }
 .modal-form-policy:checked + .modal-form-policy-text::before {
   background-color: #2196f3;
-  background-image: url(../image/icons.svg#icon-modal-tickbox);
-  border: 3px solid #fff;
+  background-image: url(/modal-tickbox.png);
+  border: 1px solid #fff;
+  
 }
 .modal-name {
   position: relative;
@@ -701,8 +699,6 @@ img {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-}
-.privacy_policy {
 }
 .statute {
   color: #2196f3;
@@ -770,21 +766,16 @@ img {
   margin-bottom: 4px;
   margin-top: 10px;
 }
-
 .modal-input {
   width: 406px;
   height: 40px;
   padding-left: 42px;
-  border: 2px solid #000;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
-input.modal-input:hover,
+.modal-input:hover,
 .modal-input:focus,
-.modal-input:hover svg,
-.modal-input:focus-within svg,
-.modal-input:active {
-  color: #2196f3;
-  fill: #2196f3;
-  border: 2px solid #2196f3;
+.modal-input:focus-within{
+  border: 1px solid #2196f3;
 }
 .comment-input {
   box-sizing: border-box;
