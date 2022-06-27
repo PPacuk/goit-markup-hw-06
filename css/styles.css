@@ -638,6 +638,11 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  transform: scale(100%);
+  opacity: 100%;
 }
 
 /*========================== modal ==========================*/
@@ -770,16 +775,16 @@ img {
   width: 406px;
   height: 40px;
   padding-left: 42px;
-  border: 2px solid #000
+  border: 2px solid #000;
 }
 input.modal-input:hover,
 .modal-input:focus,
 .modal-input:hover svg,
 .modal-input:focus-within svg,
-.modal-input:active{
-color: #2196f3;
-fill: #2196f3;
-border: 2px solid #2196f3
+.modal-input:active {
+  color: #2196f3;
+  fill: #2196f3;
+  border: 2px solid #2196f3;
 }
 .comment-input {
   box-sizing: border-box;
@@ -811,7 +816,7 @@ border: 2px solid #2196f3
   margin: 14px 15px 14px 15px;
   fill: #212121;
 }
-.modal-animate {
+/* .modal-animate {
   animation: animate-modal 2000ms;
   transition-timing-function: linear;
   position: relative;
@@ -824,7 +829,7 @@ border: 2px solid #2196f3
   100% {
     transform: scale(1);
   }
-}
+} */
 .is-hidden {
   opacity: 0;
   visibility: hidden;
