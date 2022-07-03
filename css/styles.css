@@ -43,6 +43,7 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14285714;
+  margin-top: 20px;
 }
 .banner {
   font-family: 'Raleway';
@@ -150,7 +151,6 @@ img {
   position: static;
 }
 .descriptionbox {
-
   box-sizing: border-box;
   width: 370px;
   height: 70px;
@@ -410,7 +410,7 @@ img {
   display: flex;
   gap: 10px;
   width: 270px;
-  margin-top: 28px;
+  margin-top: 20px;
 }
 .social-list-link-dark {
   display: flex;
@@ -431,6 +431,55 @@ img {
 .social-icon-dark:hover,
 .social-icon-dark:focus {
   fill: rgba(255, 255, 255, 1);
+}
+.newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+.newsletter__name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 207px;
+  height: 80px;
+  padding-top: 12px;
+  position: relative;
+  left: -20px;
+}
+.signup__email {
+  position: absolute;
+  left: 700px;
+}
+.signup__input {
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 16px;
+  background-color: #2f303a;
+  outline: none;
+  margin-top: 25px;
+  color: #eeeeee;
+}
+.signup__icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 7px;
+  left: 14px;
 }
 /*========================== component ==========================*/
 .section {
@@ -629,6 +678,26 @@ img {
   margin-top: 30px;
   margin-bottom: 40px;
 }
+.signup__btn {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: start;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  padding-left: 42px;
+  position: relative;
+  transform: translate(50%, 50%);
+  right: 30px;
+}
 /*========================== backdrop ==========================*/
 .backdrop {
   position: fixed;
@@ -675,7 +744,6 @@ img {
   outline: 1px solid #000;
   margin-left: 15px;
   margin-right: 8px;
-
 }
 .modal-form {
   display: flex;
@@ -686,7 +754,7 @@ img {
   background-color: #2196f3;
   background-image: url(../modal-tickbox.png);
   background-repeat: no-repeat;
-  background-size: cover,contain;
+  background-size: cover, contain;
 }
 .modal-name {
   position: relative;
@@ -773,15 +841,18 @@ img {
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
-.modal-input:focus-within{
+.modal-input:focus-within,
+.modal-input:hover,
+.modal-input:focus {
   border-color: #2196f3;
   outline: none;
   fill: #2196f3;
 }
-.name-icon-modal:hover,
-.name-icon-modal:focus-within{
+.name-link:hover,
+.name-link:hover use,
+.name-link:focus,
+.name-link:focus-within {
   fill: #2196f3;
-
 }
 
 .comment-input {

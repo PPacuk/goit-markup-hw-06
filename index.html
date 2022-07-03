@@ -355,13 +355,13 @@
             ><span class="highlight">Web</span><span class="highlightbanner">Studio</span></a
           >
           <address class="contact-adress">
-            <p>
+            
               <a
                 class="link"
                 href="https://www.google.pl/maps/place/al.+Jerozolimskie+21,+00-508+Warszawa/@52.2305286,21.013843,17z/data=!3m1!4b1!4m5!3m4!1s0x471eccf3e52bee23:0xc5163bc7ec8d4437!8m2!3d52.2305286!4d21.0160317"
                 ><span class="highlightbottom"> m. Warszawa, Aleje Jerozolimskie 21</span></a
               >
-            </p>
+            
             <p><a class="adress" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
             <p><a class="adress" href="tel:+48111111111">+48 111 111 111</a></p>
           </address>
@@ -399,51 +399,82 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="trying">
-        
+        <div class="newsletter">
+          <h3 class="newsletter__name">Zapisz się do newslettera</h3>
+        </div>
+        <div class="signup">
+          <form class="signup__form">
+            <label class="signup__email">
+              <input class="signup__input" type="email" name="email" placeholder="E-mail" />
+            </label>
+            <button class="signup__btn" type="submit">
+              Zapisz się
+              <svg class="signup__icon">
+                <use href="./image/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-<!-- /*========================== modal ==========================*/ -->
-    <div class="backdrop is-hidden " data-modal>
+    <!-- /*========================== modal ==========================*/ -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal-animate">
-      <div class="modal">
-        <span class="modal__head">Zostaw swoje dane w formularzu poniżej</span>
-        <form>
-          
-          <label class="modal-name"><span class="surname">Imie</span>
-            <svg class="name-icon-modal">
-              <use class="name-link" href="./image/icons.svg#icon-modal-person"></use>
-            </svg>
-          <input type="text" name="name" class="modal-input">
-          </label>
-          <label class="modal-name"><span class="phonenr">Telefon</span>
-            <svg class="phone-icon-modal">
-              <use class="name-link" href="./image/icons.svg#icon-modal-phone"></use>
-            </svg>
-          <input type="tel" name="phone" class="modal-input">
-          </label>
-          <label class="modal-name"><span class="email-modal">Email</span>
-            <svg class="phone-icon-modal">
-              <use class="name-link" href="./image/icons.svg#icon-modal-mail"></use>
-            </svg>
-          <input type="email" name="email" class="modal-input">
-          <label class="modal-name"><span class="comment-modal">Komentarz</span>
-            <textarea name="comment" class="comment-input" rows="4" placeholder="Wprowadź tekst"></textarea>
-          </label>
-          <input class="modal-form-policy visually-hidden" id="user-policy" type="checkbox" name="policy">
-          <label for="user-policy" class="modal-form-policy-text"><span class="statement">Oświadczam iż akceptuję <a href="#" class="statute">Regulamin</a> i <a href="#" class="statute">Politykę Prywatności.</a></span></label>
-          <label>
-            <input class="submit-btn" type="submit" value="Wyślij">
-          </label>
-        </form>
-        <svg class="close-btn" data-modal-close>
-          <use href="./image/icons.svg#icon-close"></use>
-        </svg>
+        <div class="modal">
+          <span class="modal__head">Zostaw swoje dane w formularzu poniżej</span>
+          <form class="form">
+            <label class="modal-name"
+              ><span class="surname">Imie</span>
+              <svg class="name-icon-modal">
+                <use class="name-link" href="./image/icons.svg#icon-modal-person"></use>
+              </svg>
+              <input type="text" name="name" class="modal-input" />
+            </label>
+            <label class="modal-name"
+              ><span class="phonenr">Telefon</span>
+              <svg class="phone-icon-modal">
+                <use class="name-link" href="./image/icons.svg#icon-modal-phone"></use>
+              </svg>
+              <input type="tel" name="phone" class="modal-input" />
+            </label>
+            <label class="modal-name"
+              ><span class="email-modal">Email</span>
+              <svg class="phone-icon-modal">
+                <use class="name-link" href="./image/icons.svg#icon-modal-mail"></use>
+              </svg>
+              <input type="email" name="email" class="modal-input" />
+            </label>
+            <label class="modal-name"
+              ><span class="comment-modal">Komentarz</span>
+              <textarea
+                name="comment"
+                class="comment-input"
+                rows="4"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+            <input
+              class="modal-form-policy visually-hidden"
+              id="user-policy"
+              type="checkbox"
+              name="policy"
+            />
+            <label for="user-policy" class="modal-form-policy-text"
+              ><span class="statement"
+                >Oświadczam iż akceptuję <a href="#" class="statute">Regulamin</a> i
+                <a href="#" class="statute">Politykę Prywatności.</a></span
+              ></label
+            >
+            <label>
+              <input class="submit-btn" type="submit" value="Wyślij" />
+            </label>
+          </form>
+          <svg class="close-btn" data-modal-close>
+            <use href="./image/icons.svg#icon-close"></use>
+          </svg>
+        </div>
       </div>
-      </div>
-    </div> 
-    <script src="./js/modal.js"></script>   
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
- 
