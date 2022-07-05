@@ -458,6 +458,7 @@ img {
 .signup__email {
   position: absolute;
   left: 700px;
+  margin-left: 70px;
 }
 .signup__input {
   box-sizing: border-box;
@@ -819,6 +820,9 @@ img {
 .name-link:hover use,
 .name-link:focus,
 .name-link:focus-within {
+  fill: #2196f3;
+}
+label:focus-within{
   fill: #2196f3;
 }
 
