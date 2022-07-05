@@ -422,27 +422,27 @@
       <div class="modal-animate">
         <div class="modal">
           <span class="modal__head">Zostaw swoje dane w formularzu poniżej</span>
-          <form class="form">
+          <form class="form" autocomplete="on" novalidate>
             <label class="form-label"
               ><span class="label-text">Imie</span>
               <svg class="name-icon-modal">
                 <use class="name-link" href="./image/icons.svg#icon-modal-person"></use>
               </svg>
-              <input type="text" name="name" class="modal-input" />
+              <input type="text" name="name" class="modal-input" required/>
             </label>
             <label class="form-label"
               ><span class="label-text">Telefon</span>
               <svg class="phone-icon-modal">
                 <use class="name-link" href="./image/icons.svg#icon-modal-phone"></use>
               </svg>
-              <input type="tel" name="phone" class="modal-input" />
+              <input type="tel" name="phone" class="modal-input" required/>
             </label>
             <label class="form-label"
               ><span class="label-text">Email</span>
               <svg class="email-icon-modal">
                 <use class="name-link" href="./image/icons.svg#icon-modal-mail"></use>
               </svg>
-              <input type="email" name="email" class="modal-input" />
+              <input type="email" name="email" class="modal-input" required/>
             </label>
             <label class="form-label">
               <span class="label-text">Komentarz</span>
