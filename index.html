@@ -14,36 +14,34 @@
   </head>
 
   <body>
-    <header class="contact">
-      <div class="containerflex">
-        <a class="banner" href="https://ppacuk.github.io/web-studio/"
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="https://ppacuk.github.io/web-studio/"
           ><span class="highlight">Web</span>Studio</a
         >
-        <nav>
+        <nav class="navigation">
           <ul class="menu">
-            <li class="menuitem">
-              <a class="link active" href="./index.html">Agencja</a>
+            <li class="menu__item">
+              <a class="menu__link active" href="./index.html">Agencja</a>
             </li>
-            <li class="menuitem">
-              <a class="link" href="./portfolio.html"> Portfolio</a>
+            <li class="menu__item">
+              <a class="menu__link" href="./portfolio.html"> Portfolio</a>
             </li>
-            <li class="menuitem">
-              <a class="link" href="">Kontakt</a>
+            <li class="menu__item">
+              <a class="menu__link" href="">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <ul class="menu">
-          <li class="menuadress">
-            <a class="adress" href="mailto:info@devstudio.com">
-              <svg class="mail-icon" width="16px" height="12px">
+        <ul class="contact">
+          <li class="contact__adress">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon mail-icon" width="16px" height="12px">
                 <use href="image/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+              </svg>info@devstudio.com</a>
           </li>
-          <li class="menuadress phone-icon">
-            <a class="adress" href="tel:+48111111111">
-              <svg class="phone-icon" width="10px" height="16px">
+          <li class="contact__adress">
+            <a class="contact__link" href="tel:+48111111111">
+              <svg class="contact__icon" width="10px" height="16px">
                 <use href="image/icons.svg#icon-phone"></use>
               </svg>
               +48 111 111 111</a
@@ -53,9 +51,9 @@
       </div>
     </header>
     <main>
-      <section class="title">
-        <h1 class="titlecontainer" id="title">efektywne rozwiązania dla waszego biznesu</h1>
-        <button id="orderbutton" type="button" data-modal-open>Zamów usługę</button>
+      <section class="main">
+        <h1 class="main__title">efektywne rozwiązania dla waszego biznesu</h1>
+        <button class="main__btn" type="button" data-modal-open>Zamów usługę</button>
       </section>
       <section>
         <div class="container">
@@ -361,8 +359,8 @@
               ><span class="highlightbottom"> m. Warszawa, Aleje Jerozolimskie 21</span></a
             >
 
-            <p><a class="adress" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-            <p><a class="adress" href="tel:+48111111111">+48 111 111 111</a></p>
+            <p><a class="contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+            <p><a class="contact__link" href="tel:+48111111111">+48 111 111 111</a></p>
           </address>
         </div>
         <div class="container-social">
@@ -400,11 +398,10 @@
         </div>
         <div class="newsletter">
           <h3 class="newsletter__name">Zapisz się do newslettera</h3>
-        
           <div class="signup">
             <form class="signup__form">
               <label class="signup__email">
-                <input class="signup__input" type="email" name="email" placeholder="E-mail" />
+                <input class="signup__input" type="email" name="email" placeholder="E-mail"/>
               </label>
               <button class="signup__btn" type="submit">
               Zapisz się
@@ -412,7 +409,7 @@
                   <use href="./image/icons.svg#icon-send"></use>
                 </svg>
               </button>
-          </form>
+            </form>
           </div>
         </div>
       </div>
@@ -422,7 +419,7 @@
       <div class="modal-animate">
         <div class="modal">
           <span class="modal__head">Zostaw swoje dane w formularzu poniżej</span>
-          <form class="form" autocomplete="on" novalidate>
+          <form class="form">
             <label class="form-label"
               ><span class="label-text">Imie</span>
               <svg class="name-icon-modal">
@@ -461,7 +458,7 @@
                 <a href="#" class="statute">Politykę Prywatności.</a>
               </span>
             </label>
-              <button class="submit-btn" type="submit"/>Wyślij</button>
+              <button class="submit-btn" type="submit">Wyślij</button>
           </form>
           <svg class="close-btn" data-modal-close>
             <use href="./image/icons.svg#icon-close"></use>

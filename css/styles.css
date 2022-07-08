@@ -28,8 +28,11 @@ img {
   display: block;
 }
 /*========================== header ==========================*/
-
-.contact {
+.header .container {
+  display: flex;
+  justify-content: space-around;
+}
+.header {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -45,7 +48,7 @@ img {
   line-height: 1.14285714;
   margin-top: 20px;
 }
-.banner {
+.logo {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -67,28 +70,20 @@ img {
 .active::after {
   content: '';
   display: block;
-  border-bottom: 2px solid;
+  border-bottom: 4px solid;
   position: relative;
+  margin-top: -4px;
   top: 33px;
   color: #2196f3;
 }
 /*========================== main ==========================*/
 
-.titlecontainer {
+.main__title {
   width: 654px;
   height: 120px;
   margin: auto;
   margin-bottom: 15px;
   padding-top: 200px;
-}
-.title {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../image/imgbgc.jpg);
-  height: 600px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
@@ -97,6 +92,13 @@ img {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+}
+.main {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../image/imgbgc.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .asset {
   width: 70px;
@@ -435,7 +437,7 @@ img {
 .newsletter {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 40px;
+  width: 570px;
 }
 .newsletter__name {
   font-family: 'Roboto';
@@ -447,18 +449,11 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   width: 207px;
-  height: 80px;
-  padding-top: 12px;
+  margin-top: 12px;
   position: relative;
-  left: -20px;
 }
 .signup {
   margin-top: 20px;
-}
-.signup__email {
-  position: absolute;
-  left: 700px;
-  margin-left: 70px;
 }
 .signup__input {
   box-sizing: border-box;
@@ -475,7 +470,6 @@ img {
   padding-left: 16px;
   background-color: #2f303a;
   outline: none;
-  margin-top: 25px;
   color: #eeeeee;
 }
 .signup__icon {
@@ -484,6 +478,9 @@ img {
   position: relative;
   top: 7px;
   left: 14px;
+}
+.signup__form {
+  display: flex;
 }
 /*========================== component ==========================*/
 .section {
@@ -497,17 +494,21 @@ img {
   gap: 8px;
   margin-top: 94px;
 }
-.menuadress:first-child {
+.contact {
+  display: flex;
+  align-items: center;
+}
+.contact__adress:first-child {
   margin-left: 93px;
 }
-.menuadress:last-child {
+.contact__adress:last-child {
   margin-left: 50px;
 }
 .menu {
   display: flex;
   align-items: center;
 }
-.menuitem:not(:first-child) {
+.menu__item:not(:first-child) {
   margin-left: 46px;
   font-family: 'Roboto';
   font-style: normal;
@@ -518,13 +519,11 @@ img {
 
   color: #212121;
 }
-.menuitem {
+.menu__item {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.menuitem {
-  color: #2196f3;
-}
+
 .containerflex {
   width: 1200px;
   margin: 0 auto;
@@ -573,41 +572,35 @@ img {
 .highlightbottom:focus {
   color: #2196f3;
 }
-.adress:visited {
+.contact__link:visited {
   color: #757575;
 }
-.adress:hover,
-.adress:hover svg,
-.adress:focus {
+.contact__link:hover,
+.contact__link:hover svg,
+.contact__link:focus {
   color: #2196f3;
   fill: #2196f3;
 }
-.mail-icon {
+.contact__icon {
   margin-right: 10px;
   fill: #757575;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.phone-icon {
-  margin-right: 10px;
-  fill: #757575;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.adress {
+.contact__link {
   color: #757575;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link {
+.menu__link {
   color: #212121;
-}
-.link:hover,
-.link:focus {
-  color: #2196f3;
-}
-.link {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.menu__link:hover,
+.menu__link:focus {
+  color: #2196f3;
+}
+
 /*========================== buttons ==========================*/
 .button:hover,
 .button:focus {
@@ -630,12 +623,12 @@ img {
   padding: 6px 22px;
   border-radius: 4px;
 }
-#orderbutton:hover,
-#orderbutton:focus {
+.main__btn:hover,
+.main__btn:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
-#orderbutton {
+.main__btn {
   cursor: pointer;
   background: #2196f3;
   font-family: 'Roboto';
@@ -684,7 +677,6 @@ img {
 }
 .signup__btn {
   width: 200px;
-  height: 50px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -698,9 +690,7 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   padding-left: 42px;
-  position: relative;
-  transform: translate(50%, 50%);
-  right: -35px;
+  margin-left: 12px;
 }
 /*========================== backdrop ==========================*/
 .backdrop {
@@ -813,10 +803,10 @@ img {
   border-color: #2196f3;
   outline: none;
 }
-label:focus-within{
+label:focus-within {
   fill: #2196f3;
 }
-label{
+label {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment-input {

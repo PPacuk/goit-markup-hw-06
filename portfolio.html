@@ -14,30 +14,34 @@
   </head>
 
   <body>
-    <header class="contact">
-      <div class="containerflex">
-        <a class="banner" href="https://ppacuk.github.io/web-studio/"
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="https://ppacuk.github.io/web-studio/"
           ><span class="highlight">Web</span>Studio</a
         >
-        <nav>
+        <nav class="navigation">
           <ul class="menu">
-            <li class="menuitem"><a class="link" href="./index.html">Agencja</a></li>
-            <li class="menuitem"><a class="link active" href="./portfolio.html"> Portfolio</a></li>
-            <li class="menuitem"><a class="link" href="">Kontakt</a></li>
+            <li class="menu__item">
+              <a class="menu__link active" href="./index.html">Agencja</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./portfolio.html"> Portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">Kontakt</a>
+            </li>
           </ul>
         </nav>
-        <ul class="menu">
-          <li class="menuadress">
-            <a class="adress" href="mailto:info@devstudio.com">
-              <svg class="mail-icon" width="16px" height="12px">
+        <ul class="contact">
+          <li class="contact__adress">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon mail-icon" width="16px" height="12px">
                 <use href="image/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+              </svg>info@devstudio.com</a>
           </li>
-          <li class="menuadress phone-icon">
-            <a class="adress" href="tel:+48111111111">
-              <svg class="phone-icon" width="10px" height="16px">
+          <li class="contact__adress">
+            <a class="contact__link" href="tel:+48111111111">
+              <svg class="contact__icon" width="10px" height="16px">
                 <use href="image/icons.svg#icon-phone"></use>
               </svg>
               +48 111 111 111</a
@@ -267,22 +271,21 @@
       </section>
     </main>
 
-    <footer class="bottom">
+   <footer class="bottom">
       <div class="containerflex">
         <div class="container-contact">
           <a class="banner-dark" href="https://ppacuk.github.io/web-studio/"
             ><span class="highlight">Web</span><span class="highlightbanner">Studio</span></a
           >
           <address class="contact-adress">
-            <p>
-              <a
-                class="link"
-                href="https://www.google.pl/maps/place/al.+Jerozolimskie+21,+00-508+Warszawa/@52.2305286,21.013843,17z/data=!3m1!4b1!4m5!3m4!1s0x471eccf3e52bee23:0xc5163bc7ec8d4437!8m2!3d52.2305286!4d21.0160317"
-                ><span class="highlightbottom"> m. Warszawa, Aleje Jerozolimskie 21</span></a
-              >
-            </p>
-            <p><a class="adress" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-            <p><a class="adress" href="tel:+48111111111">+48 111 111 111</a></p>
+            <a
+              class="link"
+              href="https://www.google.pl/maps/place/al.+Jerozolimskie+21,+00-508+Warszawa/@52.2305286,21.013843,17z/data=!3m1!4b1!4m5!3m4!1s0x471eccf3e52bee23:0xc5163bc7ec8d4437!8m2!3d52.2305286!4d21.0160317"
+              ><span class="highlightbottom"> m. Warszawa, Aleje Jerozolimskie 21</span></a
+            >
+
+            <p><a class="contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+            <p><a class="contact__link" href="tel:+48111111111">+48 111 111 111</a></p>
           </address>
         </div>
         <div class="container-social">
@@ -320,19 +323,19 @@
         </div>
         <div class="newsletter">
           <h3 class="newsletter__name">Zapisz się do newslettera</h3>
-        </div>
-        <div class="signup">
-          <form class="signup__form">
-            <label class="signup__email">
-              <input class="signup__input" type="email" name="email" placeholder="E-mail" />
-            </label>
-            <button class="signup__btn" type="submit">
+          <div class="signup">
+            <form class="signup__form">
+              <label class="signup__email">
+                <input class="signup__input" type="email" name="email" placeholder="E-mail"/>
+              </label>
+              <button class="signup__btn" type="submit">
               Zapisz się
-              <svg class="signup__icon">
-                <use href="./image/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
+                <svg class="signup__icon">
+                  <use href="./image/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
